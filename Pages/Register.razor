@@ -1,0 +1,25 @@
+@page "/register"
+
+<PageTitle>Register</PageTitle>
+
+<h1>Register</h1>
+
+<p>
+    <MatTextField @bind-Value="@myStringUser" Label="Username"></MatTextField>
+</p>
+<p>
+    <MatTextField @bind-Value="@myStringPassword" Label="Password" IconTrailing="true" Required="true" Type="password"></MatTextField>
+</p>
+<p>
+    <MatTextField @bind-Value="@myStringConfirm" Label="Confirm Password" IconTrailing="true" Required="true" Type="Password"></MatTextField>
+</p>
+
+@code
+{
+
+    string myStringUser;
+    string myStringPassword;
+    string myStringConfirm;
+    int myIntValue;
+    DateTime? myDateTimeNullValue;
+}
